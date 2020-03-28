@@ -19,3 +19,12 @@ Nitpicking Starts Here
 ----------------------
 
 * [NULLCHECK](grumbles/NULLCHECK.md) Checking for null
+
+How to Contribute
+-----------------
+
+If you want to put out the fire or, on the contrary, to throw more logs
+into it, you're welcome:
+
+* [Create an Issues](issues)
+* [Create a Pull Request](pulls)

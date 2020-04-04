@@ -27,5 +27,5 @@ How to Contribute
 If you want to put out the fire or, on the contrary, to throw more logs
 into it, you're welcome:
 
-* [Create an Issues](issues)
+* [Create an Issue](issues)
 * [Create a Pull Request](pulls)

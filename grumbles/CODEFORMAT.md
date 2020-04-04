@@ -90,9 +90,9 @@ to automatize it.
 
 Let me explain to you one more time what the last example does:
 
-For all authors filter only active ones, then map to their books (and
+_For all authors filter only active ones, then map to their books (and
 flatten the result), filter only available books, map to their title,
-and collect everything to the list.
+and collect everything to the list._
 
 To me reading the list of bullet points is much easier than this
 sentence. This is what your code must be to be readable: it must be
@@ -172,8 +172,8 @@ protected void configure(HttpSecurity http) throws Exception {
 
 Just make sure that your IDE has this option turned on.
 
-The last (the first) example. The rule is the same: keep semantic units
-on a separate lines, do not mix them. Note that semantic unit is not
+The last (the first) example. The rule is the same: _keep semantic units
+on a separate lines, do not mix them_. Note that semantic unit is not
 necessarily one method call. It also might be two calls in a row (that
 is why we put "technical" but not "semantical" call of `stream()` method
 to the very end of the line. It's just not so important to get the code.

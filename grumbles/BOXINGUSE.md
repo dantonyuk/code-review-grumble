@@ -83,12 +83,19 @@ So we know for sure that:
 * some IDEs complain about unboxing without [null check](NULLCHECK.md)
 
 Wrapper values used in place of primitives consume more memory. Let's
-see how much. It differs from JVM to JVM, so for simplicity let's take
-64-bit JDK. Object there has 12-byte header, and integer primitive value
-fits right away into 16 pad (it depends on the memory alignment, let's
-pretend that it's 16 bytes). So the total space used by `Integer` class
-is 16 bytes. Same for `Boolean`. So you see it's 4 times more than a
-primitive value.
+see how much. It differs from JVM to JVM, so for the sake of simplicity
+let's take 64-bit JDK. Object there has 12-byte header, and integer
+primitive value fits right away into 16 pad (it depends on the memory
+alignment, let's pretend that it's 16 bytes). So the total space used by
+`Integer` class is 16 bytes. You see it's 4 times more than a primitive
+int value. But don't forget about the client side! Since wrapper objects
+are used by reference not by value, it adds up 8 bytes for every object
+with one `Integer` field in it. If this integer value is not from cache
+(which by default holds only 256 integers in range –127 to +127) the
+memory consumption is 6 times more. For `Boolean`s it's slightly better:
+since we have only two boolean values they are cached and only object
+reference is the one that takes some room. So it only doubles used
+memory.
 
 The unboxing operation might be really fast if it's optimized the way we
 can get the wrapped value directly. I don't know if JIT does it. But

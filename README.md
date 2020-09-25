@@ -21,6 +21,7 @@ Nitpicking Starts Here
 * [NULLCHECK](grumbles/NULLCHECK.md) Checking for null
 * [CODEFORMAT](grumbles/CODEFORMAT.md) Code Formatting
 * [BOXINGUSE](grumbles/BOXINGUSE.md) Boxed Values
+* [COMMENTS](grumbles/COMMENTS.md) Commenting Code
 
 How to Contribute
 -----------------

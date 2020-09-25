@@ -96,3 +96,12 @@ In all other cases the code will look better if it's like:
 ```java
 public Price getPrice(Product product, Store store)
 ```
+
+And please skip "This method will" trash. Even if you need to comment,
+follow standards:
+
+* _Returns the capital of the specified country_
+* _Fetches all eligible actions_
+* _Finds the latest price_
+
+Happy <s>Commenting</s>Coding!

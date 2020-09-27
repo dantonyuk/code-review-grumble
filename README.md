@@ -22,6 +22,7 @@ Nitpicking Starts Here
 * [CODEFORMAT](grumbles/CODEFORMAT.md) Code Formatting
 * [BOXINGUSE](grumbles/BOXINGUSE.md) Boxed Values
 * [COMMENTS](grumbles/COMMENTS.md) Commenting Code
+* [KNOWALLWAYS](grumbles/KNOWALLWAYS.md) Know All the Ways
 
 How to Contribute
 -----------------

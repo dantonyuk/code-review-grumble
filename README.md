@@ -23,6 +23,7 @@ Nitpicking Starts Here
 * [BOXINGUSE](grumbles/BOXINGUSE.md) Boxed Values
 * [COMMENTS](grumbles/COMMENTS.md) Commenting Code
 * [KNOWALLWAYS](grumbles/KNOWALLWAYS.md) Know All the Ways
+* [NOTMAGIC](grumbles/NOTMAGIC.md) Not Magic Values
 
 How to Contribute
 -----------------

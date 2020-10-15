@@ -67,7 +67,7 @@ Let me show you what I mean based on the last example:
 <pre>
 authorService.<i>listAuthors()</i>.stream().<b>filter</b>(author -> author.<i>isActive()</i>)
     .<b>flatMap</b>(author -> bookService.<i>findBooks(author)</i>.stream()).<b>filter</b>(book ->
-    <i>book.isInStock()</i>).<b>map</b>(book -> book.<i>getTitle()</i>)<b>collect</b>(Collectors.toList());
+    <i>book.isInStock()</i>).<b>map</b>(book -> book.<i>getTitle()</i>).<b>collect</b>(Collectors.toList());
 </pre>
 
 This is how we read it:
@@ -108,9 +108,9 @@ authorService.listAuthors().stream()
     .collect(Collectors.toList());
 ```
 
-Now it's much easier to read, right? Use it even you use only one method
-in your stream pipeline, like `map` or `filter`. Even then, it should be
-three lines:
+Now it's much easier to read, right? Use it even if you use only one
+method in your stream pipeline, like `map` or `filter`. Even then, it
+should be three lines:
 
 ```java
 authorService.listAuthors().stream()
@@ -208,7 +208,7 @@ public List<Book> getBooks(
 ```
 
 Close, but not a cigar. I mean it's really fine. I would approve the PR
-with this code in it. But we can do better. Let's talk about someday.
+with this code in it. But we can do better. Let's talk about it someday.
 
 ---
 

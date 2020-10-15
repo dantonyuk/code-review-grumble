@@ -101,8 +101,9 @@ reasons:
 * Use formatting tools to build strings:
 
 ```java
-String url = "https://%s/%s?active=true&country=%s".format(
-  hostname, usersApiPath, country);
+String url = String.format(
+    "https://%s/%s?active=true&country=%s",
+    hostname, usersApiPath, country);
 ```
 
 Much easier to read and maintain.
